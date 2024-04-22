@@ -90,8 +90,11 @@ document.getElementById("check").addEventListener("click", function (event) {
   // }
 
   let date = new Date().toISOString().slice(0, 10);
+
+  // Generate API URL
   const apiUrl = `https://api.aladhan.com/v1/timingsByCity/${date}?city=${cityName}&country=Pakistan`;
 
+  // Fetch data from API
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
