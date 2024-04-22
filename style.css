@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(./img/blue-mosque-istanbul.jpg);
+    /* background-position: center; */
+    background-size: 100rem;
+    /* background-repeat: no-repeat; */
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    color: #2f1007;
+    font-size: 3rem;
+    font-weight: 900;
+    display: inline-block;
+    margin-right: 8rem;
+
+}
+.logo{
+    width: 6rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+#time {
+    color: #2f1007;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #sec, #min, #hours{
+    font-size: 3rem;
+
+  }
+    span {
+        font-size: 2rem;
+    }
+  #namazTimingSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+  #cityName{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2f1007;
+    width: 30rem;
+    height: 3rem;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0.5rem 1rem #2f1007;
+  }
+  #check{
+    width: 8rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0.5rem 1rem #2f1007;
+    color: #2f1007;
+    transition: .7s ease;
+  }
+  #cityName:focus{
+    transform: scale(1.01);
+    box-shadow: 0 0 .7rem #DBC2AD;
+  }
+  #check:active {
+    transform: scale(0.95, 0.95); 
+    box-shadow: 0 0 0.7rem #DBC2AD;
+}
+#check:hover{
+    box-shadow: 0 0 .7rem #DBC2AD;
+    cursor: pointer;
+  }
+  #outputContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+table{
+      background-color: rgba(0, 0, 0, 0.626);
+      padding: 1rem;
+  }
+  #output{
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 6px;
+    line-height: 42px;
+    color: #DBC2AD;
+  }

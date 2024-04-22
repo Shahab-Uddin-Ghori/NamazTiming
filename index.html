@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Namaz Timing</title>
+</head>
+<body>
+    <!-- nav -->
+    <div id="nav">
+    <img src="./img/logo.png" alt="logo" class="logo">
+    <h1> Prayer Timings </h1>
+    <p></p>
+</div>
+    
+    <!-- digital watch -->
+    <div id="time">
+        <div>
+          <span>Seconds</span>
+          <p id="sec">0</p>
+        </div>
+        <div>
+          <span>Minutes</span>
+          <p id="min">0</p>
+        </div>
+        <div>
+          <span>Hours</span>
+          <p id="hours"></p>
+        </div>
+      </div>
+    <!-- digital watch -->
+    <form action="" method="get">
+        <div id="namazTimingSec">
+        <input type="text" id="cityName">
+        <Button id="check">Check</Button>
+    </div>
+    </form>
+    <div id="outputContainer">
+    <table>
+        <tr>
+            <td id="output"></td>
+        </tr>
+    </table>
+</div>
+    <!-- <p id="output"></p> -->
+    <script src="script.js"></script>
+</body>
+</html>
