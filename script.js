@@ -90,7 +90,7 @@ document.getElementById("check").addEventListener("click", function (event) {
   // }
 
   let date = new Date().toISOString().slice(0, 10);
-  const apiUrl = `http://api.aladhan.com/v1/timingsByCity/${date}?city=${cityName}&country=Pakistan`;
+  const apiUrl = `https://api.aladhan.com/v1/timingsByCity/${date}?city=${cityName}&country=Pakistan`;
 
   fetch(apiUrl)
     .then((response) => response.json())
